@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Sheet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section>
+        <h1 class="text-5xl text-indigo-600 font-bold text-center mt-8">Welcome to your <span class="text-red-400">Bank....</span></h1>
+        <div class="grid gap-x-6 grid-cols-3 mx-auto px-24 mt-16 text-white">
+            <div class="bg-sky-400 px-7 py-5 rounded-lg">
+                <h3 class="text-3xl font-bold mb-3">Deposited</h3>
+                <h1 class="text-5xl font-semibold">$<span id="total-deposit">00</span></h1>
+            </div>
+            <div class="bg-purple-500 px-7 py-5 rounded-lg">
+                <h3 class="text-3xl font-bold mb-3">Withdraw</h3>
+                <h1 class="text-5xl font-semibold">$<span id="total-withdraw">00</span></h1>
+            </div>
+            <div class="bg-indigo-500 px-7 py-5 rounded-lg">
+                <h3 class="text-3xl font-bold mb-3">Balance</h3>
+                <h1 class="text-5xl font-semibold">$<span id="balance">1240</span></h1>
+            </div>
+
+        </div>
+        <div class="grid grid-cols-2 gap-14 px-24 mt-14 ">
+            <div class='bg-indigo-400 px-8 py-6 rounded-2xl'>
+                <h1 class="text-4xl font-semibold mb-6 text-white">Please Deposit</h1>
+                <input id="deposit-amount" class="block mb-6 w-full p-3 rounded-lg" type="text" placeholder="$ please Enter your Deposit amount"> 
+                <button id="deposit-btn" class="font-semibold text-white bg-orange-400 px-5 py-3 text-xl rounded-md">Deposit</button>
+            </div>
+            <div class='bg-blue-400 px-8 py-6 rounded-2xl'>
+                <h1 class="text-4xl font-semibold mb-6 text-white">Please Withdraw</h1>
+                <input id="withdraw-amount" class="block w-full mb-6 p-3 rounded-lg" type="text" name=""placeholder="$ please Enter your Deposit amount"> 
+                <button id="Withdraw-btn" class="font-semibold text-white bg-orange-400 px-5 py-3 text-xl rounded-md">Withdraw</button>
+            </div>
+        </div>
+    </section>
+    <script src="javascript/calculation.js"></script>
+</body>
+</html>
